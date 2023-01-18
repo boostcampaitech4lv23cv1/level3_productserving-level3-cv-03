@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "product-serving-mm"
+version = "0.1.0"
+description = "Product Serving structure for MMOpenLab"
+authors = ["Hae"]
+readme = "README.md"
+packages = [{include = "product_serving_mm"}]
+
+[tool.poetry.dependencies]
+python = "3.8.5"
+torch = "^1.13.1"
+torchvision = "^0.14.1"
+fastapi = "^0.89.1"
+python-multipart = "^0.0.5"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+streamlit = "^1.17.0"
+requests = "^2.28.2"
+openmim = "^0.3.4"
+ninja = "^1.11.1"
+psutil = "^5.9.4"
+albumentations = "^1.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
